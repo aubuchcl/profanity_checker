@@ -12,8 +12,8 @@ def read_file():
 
 
 def check_profanity(text_to_check):
-    url = urllib2.urlencode 'http://www.wdylike.appspot.com/?q='+text_to_check
-    connection = urllib2.urlopen(url)
+    #url = urllib2.urlencode 'http://www.wdylike.appspot.com/?q='+text_to_check
+    connection = urllib2.urlopen('http://www.wdylike.appspot.com/?q='+text_to_check)
     output = connection.read()
     print(output)
     connection.close()
